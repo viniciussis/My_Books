@@ -4,3 +4,8 @@
   align-items: center;
   gap: 0.45rem;
 }
+
+.logo__img {
+  width: 3rem;
+  height: auto;
+}
