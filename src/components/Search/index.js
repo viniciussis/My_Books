@@ -21,12 +21,14 @@ function Search() {
         type="text"
         onBlur={researching}
       />
-      {research.map(book => (
-        <div>
-          <p>{book.name}</p>
-          <img src={book.src} alt="Livro" />
-        </div>
-      ))}
+      <div className="search__result">
+        {research.map((book) => (
+          <div className="result__book">
+            <p className="book__name">{book.name}</p>
+            <img className="book__img" src={book.src} alt="Livro" />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

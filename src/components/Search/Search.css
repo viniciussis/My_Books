@@ -1,28 +1,24 @@
 .search {
-  background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
   color: #fff;
   text-align: center;
-  padding: 85px 0;
+  padding-top: 8.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
   box-sizing: border-box;
   overflow: hidden;
-  min-height: 100vh;
+  gap: 2.5rem;
 }
 
 .search__title {
   color: #fff;
-  font-size: 36px;
-  text-align: center;
+  font-size: 3rem;
   width: 100%;
 }
 
 .search__subtitle {
-  font-size: 16px;
+  font-size: 1.25rem;
   font-weight: 500;
-  margin-bottom: 40px;
 }
 
 .search__bar {
@@ -32,12 +28,39 @@
   border-radius: 5rem;
   box-sizing: content-box;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.25rem;
   min-width: 15rem;
 }
 
-.search__bar::placeholder{
+.search__bar::placeholder {
   color: black;
   font-size: 16px;
   font-weight: 500;
+}
+
+.search__result {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.result__book {
+  transition: 0.5s;
+  grid-column: span 2;
+}
+
+.result__book:hover {
+  transform: scale(1.1);
+}
+
+.book__name {
+  width: 5rem;
+}
+
+.book__img {
+  width: 10rem;
 }

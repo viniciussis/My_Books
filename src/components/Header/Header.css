@@ -9,6 +9,7 @@
   box-sizing: border-box;
   overflow: hidden;
   width: 100vw;
+  z-index: 10;
 }
 
 .header__nav {
